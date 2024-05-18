@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import {
   useQuery,
   useMutation,
@@ -29,7 +28,6 @@ import {
 } from "@/lib/appwrite/api";
 import { INewPost, INewUser, IUpdatePost, IUpdateUser } from "@/types";
 
-// ===
 
 export const useCreateUserAccount = () => {
   return useMutation({
@@ -62,6 +60,7 @@ export const useGetPosts = () => {
       const lastId = lastPage.documents[lastPage.documents.length - 1].$id;
       return lastId;
     },
+     initialPageParam: 0,
   });
 };
 
@@ -112,7 +111,7 @@ export const useUpdatePost = () => {
   const queryClient = useQueryClient();
   return useMutation({
     mutationFn: (post: IUpdatePost) => updatePost(post),
-    onSuccess: (data) => {
+    onSuccess: (data: any) => {
       queryClient.invalidateQueries({
         queryKey: [QUERY_KEYS.GET_POST_BY_ID, data?.$id],
       });
@@ -143,7 +142,7 @@ export const useLikePost = () => {
       postId: string;
       likesArray: string[];
     }) => likePost(postId, likesArray),
-    onSuccess: (data) => {
+    onSuccess: (data: any) => {
       queryClient.invalidateQueries({
         queryKey: [QUERY_KEYS.GET_POST_BY_ID, data?.$id],
       });
@@ -223,7 +222,7 @@ export const useUpdateUser = () => {
   const queryClient = useQueryClient();
   return useMutation({
     mutationFn: (user: IUpdateUser) => updateUser(user),
-    onSuccess: (data) => {
+    onSuccess: (data: any) => {
       queryClient.invalidateQueries({
         queryKey: [QUERY_KEYS.GET_CURRENT_USER],
       });
