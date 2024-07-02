@@ -61,6 +61,11 @@ const navigate = useNavigate()
   }
   return (
     <section className="flex flex-col justify-center items-center">
+      <div className="absolute top-10 flex flex-col opacity-50">
+        Access:
+        <span>email: <code>test@gmail.com</code></span>
+        <span>password: <code>test112233</code></span>
+      </div>
 
       <Form {...form}>
         <div className="sm:w-420 flex justify-center items-center flex-col ">
