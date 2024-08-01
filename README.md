@@ -17,7 +17,7 @@ Esta es una aplicación de red social creada con React, TypeScript, ShadCN y Tai
 1. **Clona el repositorio**
 
    ```bash
-   git clone https://github.com/tuusuario/redSocial.git
+   git clone https://github.com/brianfigueroa10/redSocial.git
    cd redSocial
     ```
 
