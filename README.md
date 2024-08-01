@@ -36,12 +36,6 @@ Esta es una aplicación de red social creada con React, TypeScript, ShadCN y Tai
 
 4. **Abrir en tu navegador:** Abre `http://localhost:3000` en tu navegador web favorito.
 
-## Ejemplo de Uso
-
-1. **Explorar el catálogo:** Navega por la lista de productos disponibles y consulta sus detalles.
-2. **Agregar al carrito:** Haz clic en el botón "Agregar al carrito" para añadir productos al carrito de compras.
-3. **Gestionar el carrito:** Ve al carrito de compras para ajustar las cantidades de los productos seleccionados.
-
 ## Captura de Pantalla
 
 ![Captura de Pantalla](https://res.cloudinary.com/dv4ukplcm/image/upload/f_auto,q_auto/v1/proyects/zrvravtyyggr3aebdmgp)
