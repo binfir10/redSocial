@@ -1,30 +1,57 @@
-# React + TypeScript + Vite
+# Social Network
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
 
-Currently, two official plugins are available:
+Esta es una aplicación de red social creada con React, TypeScript, ShadCN y Tailwind CSS. Utiliza Appwrite como base de datos para la gestión de usuarios y contenido.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologías
 
-## Expanding the ESLint configuration
+- **React**: Biblioteca para construir la interfaz de usuario.
+- **TypeScript**: Superset de JavaScript que añade tipos estáticos.
+- **ShadCN**: Librería de componentes de UI.
+- **Tailwind CSS**: Framework de CSS para estilos rápidos y personalizados.
+- **Appwrite**: Backend-as-a-Service (BaaS) para la gestión de datos y autenticación.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Configuración del Entorno
 
-- Configure the top-level `parserOptions` property like this:
+1. **Clona el repositorio**
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+   ```bash
+   git clone https://github.com/tuusuario/redSocial.git
+   cd redSocial
+    ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. **Instalar las dependencias:**
+
+    ```bash
+    cd redSocial
+    npm install
+    ```
+
+3. **Iniciar la aplicación:**
+
+    ```bash
+    npm run dev
+    ```
+
+4. **Abrir en tu navegador:** Abre `http://localhost:3000` en tu navegador web favorito.
+
+## Ejemplo de Uso
+
+1. **Explorar el catálogo:** Navega por la lista de productos disponibles y consulta sus detalles.
+2. **Agregar al carrito:** Haz clic en el botón "Agregar al carrito" para añadir productos al carrito de compras.
+3. **Gestionar el carrito:** Ve al carrito de compras para ajustar las cantidades de los productos seleccionados.
+
+## Captura de Pantalla
+
+![Captura de Pantalla](https://res.cloudinary.com/dv4ukplcm/image/upload/f_auto,q_auto/v1/proyects/zrvravtyyggr3aebdmgp)
+
+## Contribuciones
+
+Las contribuciones son bienvenidas. Si deseas contribuir a este proyecto, por favor sigue estos pasos:
+
+1. **Fork este repositorio.**
+2. **Crea una rama con tu nueva característica (`git checkout -b feature/nueva-caracteristica`).**
+3. **Haz commit de tus cambios (`git commit -m 'Agrega nueva característica'`).**
+4. **Push a la rama (`git push origin feature/nueva-caracteristica`).**
+5. **Abre un Pull Request.**
